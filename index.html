@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Siti Lutfiatunnisa Salsabila | HR Portfolio</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+:root{
+  --primary:#1fb7b6;
+  --dark:#0f172a;
+  --bg:#ffffff;
+  --card:#ffffff;
+}
+body.dark{
+  --bg:#0b1220;
+  --card:#111827;
+  color:#e5e7eb;
+}
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family:Segoe UI,Tahoma,sans-serif;
+  background:var(--bg);
+  color:var(--dark);
+  line-height:1.7;
+  transition:.4s;
+}
+section{
+  min-height:100vh;
+  padding:80px 20px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  position:relative;
+  overflow:hidden;
+}
+section::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(31,183,182,.25), transparent 55%),
+    radial-gradient(circle at 80% 30%, rgba(31,183,182,.2), transparent 60%);
+}
+.content{
+  position:relative;
+  z-index:2;
+  background:var(--card);
+  max-width:1000px;
+  width:100%;
+  padding:50px;
+  border-radius:22px;
+  box-shadow:0 20px 50px rgba(0,0,0,.15);
+  opacity:0;
+  transform:translateY(40px);
+  transition:.8s;
+}
+.content.show{opacity:1;transform:none}
+h1,h2{color:var(--primary)}
+h1{font-size:42px}
+h2{font-size:32px}
+.icon-title{display:flex;align-items:center;gap:14px;margin-bottom:30px}
+.icon-title i{font-size:26px;color:var(--primary)}
+.hero{display:flex;gap:36px;flex-wrap:wrap;align-items:center}
+.profile{
+  width:180px;height:180px;border-radius:50%;
+  padding:6px;border:2px solid rgba(31,183,182,.6);
+  backdrop-filter:blur(8px);
+}
+.profile img{
+  width:100%;height:100%;
+  border-radius:50%;
+  object-fit:cover;
+}
+.btn{
+  display:inline-flex;
+  gap:8px;
+  align-items:center;
+  padding:10px 18px;
+  border-radius:14px;
+  font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+}
+.btn-primary{background:var(--primary);color:#fff}
+.btn-outline{border:2px solid var(--primary);color:var(--primary)}
+.timeline{position:relative;padding-left:50px}
+.timeline::before{
+  content:"";
+  position:absolute;
+  left:16px;top:0;bottom:0;
+  width:4px;background:var(--primary);
+}
+.post{
+  background:var(--card);
+  padding:22px;
+  border-radius:16px;
+  margin-bottom:24px;
+  box-shadow:0 10px 25px rgba(0,0,0,.1);
+  position:relative;
+}
+.post::before{
+  content:"";
+  position:absolute;
+  left:-34px;top:24px;
+  width:18px;height:18px;
+  background:var(--primary);
+  border-radius:50%;
+}
+textarea,input,select{
+  width:100%;
+  padding:12px;
+  border-radius:12px;
+  border:1px solid #ccc;
+  font-family:inherit;
+}
+footer{
+  padding:40px;
+  text-align:center;
+  background:var(--primary);
+  color:#fff;
+}
+.toggle{position:fixed;top:20px;z-index:99}
+.dark-toggle{left:20px}
+</style>
+</head>
+
+<body>
+
+<div class="toggle dark-toggle">
+<button class="btn btn-outline" onclick="toggleDark()">
+<i class="fa fa-moon"></i>
+</button>
+</div>
+
+<!-- INTRO -->
+<section>
+<div class="content">
+<div class="hero">
+<div class="profile">
+<img src="foto.jpg">
+</div>
+<div>
+<h1>Siti Lutfiatunnisa Salsabila</h1>
+<p><strong>Human Resource Management Graduate</strong><br>
+Data-Driven HR • Administration • Research</p>
+<div style="margin-top:16px;display:flex;gap:12px;flex-wrap:wrap">
+<a class="btn btn-primary" href="Portofolio Lutfia Pages.pdf" target="_blank">Portfolio</a>
+<a class="btn btn-outline" href="cv siti lutfiatunnisa salsabila (2).pdf" target="_blank">Download CV</a>
+<a class="btn btn-outline" href="https://www.linkedin.com/in/sitilutfiatunnisas011002" target="_blank">LinkedIn</a>
+</div>
+</div>
+</div>
+<p style="margin-top:28px">
+Lulusan Manajemen SDM dengan kemampuan administrasi kepegawaian, analisis kinerja berbasis data,
+dan pengembangan kompetensi profesional.
+</p>
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-graduation-cap"></i><h2>Education</h2></div>
+<p>
+MI Al-Khairiyah Pengampelan (2008–2014)<br>
+MTs Al-Khairiyah Pengampelan (2014–2017)<br>
+MA Daarul Falah Serang, Banten (2017–2020)<br>
+<strong>S1 Manajemen – Konsentrasi SDM</strong><br>
+Universitas Primagraha (2021–2025)
+</p>
+</div></section>
+
+<!-- EXPERIENCE -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-briefcase"></i><h2>Work Experience</h2></div>
+<ul>
+<li>Administrasi kepegawaian dan pengelolaan dokumen SDM</li>
+<li>Administrasi surat dan arsip instansi pemerintah</li>
+<li>Pengelolaan data operasional dan laporan</li>
+<li>Desain konten dan publikasi digital</li>
+</ul>
+</div></section>
+
+<!-- SKILLS -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-star"></i><h2>Skills</h2></div>
+<strong>Hard Skills</strong>
+<ul>
+<li>Administrasi SDM</li>
+<li>Microsoft Office</li>
+<li>Pengarsipan & dokumentasi</li>
+<li>Desain grafis dasar</li>
+</ul>
+<strong>Soft Skills</strong>
+<ul>
+<li>Komunikasi efektif</li>
+<li>Kerja tim</li>
+<li>Manajemen waktu</li>
+</ul>
+</div></section>
+
+<!-- TIMELINE -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-stream"></i><h2>Activity Timeline</h2></div>
+<div class="timeline" id="timeline"></div>
+</div></section>
+
+<!-- ADMIN -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-lock"></i><h2>Admin Panel</h2></div>
+
+<div id="admin-login">
+<input id="adminUser" placeholder="Username"><br><br>
+<input id="adminPass" type="password" placeholder="Password"><br><br>
+<button class="btn btn-primary" onclick="adminLogin()">Login</button>
+<p id="loginStatus"></p>
+</div>
+
+<form id="admin-form" style="display:none" onsubmit="addPost(event)">
+<select id="postType">
+<option>Pelatihan</option>
+<option>Riset</option>
+<option>Sertifikasi</option>
+</select><br><br>
+<input id="postTitle" placeholder="Judul"><br><br>
+<textarea id="postDesc" placeholder="Deskripsi"></textarea><br><br>
+<button class="btn btn-primary">Posting</button>
+</form>
+</div></section>
+
+<!-- CONTACT -->
+<section><div class="content">
+<div class="icon-title"><i class="fa fa-envelope"></i><h2>Contact Me</h2></div>
+<p>Email: sitilutfiatunnisa.salsabila@gmail.com</p>
+<p>LinkedIn: linkedin.com/in/sitilutfiatunnisas011002</p>
+</div></section>
+
+<footer>© 2026 Siti Lutfiatunnisa Salsabila</footer>
+
+<script>
+const observer=new IntersectionObserver(e=>{
+e.forEach(x=>x.isIntersecting&&x.target.classList.add('show'))
+},{threshold:.2});
+document.querySelectorAll('.content').forEach(el=>observer.observe(el));
+
+function toggleDark(){
+document.body.classList.toggle('dark');
+}
+
+function adminLogin(){
+if(adminUser.value==="AdminLutfia" && adminPass.value==="lutfia2026"){
+admin-login.style.display="none";
+admin-form.style.display="block";
+}else{
+loginStatus.innerText="Login gagal";
+}
+}
+
+function addPost(e){
+e.preventDefault();
+const post=document.createElement("div");
+post.className="post";
+post.innerHTML=`<strong>${postType.value} – ${postTitle.value}</strong>
+<br><small>${new Date().toLocaleDateString("id-ID")}</small>
+<p>${postDesc.value}</p>`;
+timeline.prepend(post);
+e.target.reset();
+}
+</script>
+
+</body>
+</html>
+
